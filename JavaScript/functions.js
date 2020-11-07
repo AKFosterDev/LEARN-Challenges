@@ -1,10 +1,6 @@
-// Psudocode example
-// create a function called xxxx
-// takes in 1 number as an arguments
-// if number is less than 40 return 'can not ride rollercoaster'
-// otherwise return 'allowed to ride rollercoaster'
-
 // Write a function named marco that returns "polo".
+
+// ************************************************************************
 
 // Write a function named greeting that takes a name as an argument and returns "Welcome, <person's name here>!"
 
