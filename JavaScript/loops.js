@@ -25,7 +25,7 @@ for (let i = 1; i <= 20; i++) {
 // ************************************************************************
 // Looping over an array. Consider this variable:
 
-var nums = [3, 57, -9, 20, 67]
+let nums = [3, 57, -9, 20, 67]
 
 // Create a loop that will log the highest number from the array. Expected output --> 67
 let max = nums[0]
@@ -60,7 +60,7 @@ for (let i = 0; i < nums.length; i++) {
 
 // Write the code that will log the number of times the letter "e" occurs in the string. Expected output --> 2
 
-var myString = 'learn student'
+let myString = 'learn student'
 
 let count = 0
 
