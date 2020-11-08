@@ -628,3 +628,5 @@ console.log(addUp(600))
 // As a user, when I see if my guess is too high or too low
 // As a user, if I guess the number correctly I am notified that I won
 // STRETCH: As a user, if I have not guessed the correct number in seven tries I see a losing message
+
+// SEE HighLowGame folder for solution
