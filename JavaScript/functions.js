@@ -373,97 +373,250 @@ console.log(lowestNumber(numberArray2))
 console.log(lowestNumber(numberArray1))
 
 // ************************************************************************
-
+// Problem #17
 // Create a function that calculates the sum
-// var addThese1 = [1, 2, 3, 4]
 
-// Expected output --> 10
+var addThese1 = [1, 2, 3, 4] // Expected output --> 10
+var addThese2 = [] // Expected output --> 0
 
-// var addThese2 = []
+// create function that takes in an array of numbers
+const addThemUp = arr => {
+  // add each number in the array together
+  // what is happening here...using addThese1 array
+  // acc = 0, cur = 1 => acc = 1
+  // acc = 1, cur = 2 => acc = 3
+  // acc = 3, cur = 3 => acc = 6
+  // acc = 6, cur = 4 => acc = 10
+  const sum = arr.reduce((acc, cur) => {
+    return acc + cur
+  }, 0) // this 0 sets the acc value
+  // return sum of all nums in array
+  return sum
+}
 
-// Expected output --> 0
+// call the function
+console.log('Problem #17')
+console.log(addThemUp(addThese1))
+console.log(addThemUp(addThese2))
 
 // ************************************************************************
+// Problem #18
+// Create a function that calculates the mean value (sum / count)
 
-// Create a function that calculates the mean value
-// var meanChecker = [1, 2, 3] Expected output --> 2
+let meanArray1 = [1, 2, 3] // Expected output --> 2
+let meanArray2 = [5, 9, 7, 8] // Expected output --> 7.25
+
+// create a function that takes in an array of numbers
+const meanChecker = arr => {
+  // create loop to add all numbers together
+  const sum = arr.reduce((acc, cur) => {
+    return acc + cur
+  }, 0)
+  // return that sum divided by the length of the array
+  return sum / arr.length
+}
+
+// call the function
+console.log('Problem #18')
+console.log(meanChecker(meanArray1))
+console.log(meanChecker(meanArray2))
 
 // ************************************************************************
-
+// Problem #19
 // Create a function that finds the index of the highest number
-// var indexHighestNumber = [1, 4, 2]
+let highIndexArr1 = [1, 4, 2] // Expected output --> 1
+let highIndexArr2 = [99, 42, 53, 74] // Expected output --> 1
+let highIndexArr3 = [11, 38, 79] // Expected output --> 1
 
-// Expected output --> 1
+// create a function that takes in an array of numbers
+const indexHighestNumber = array => {
+  // create loop to compare index of values
+  // what is happening here?
+  // iMax => index of max element so far
+  // cur => currently tested element in array (value)
+  // i => currently tested index
+  // arr => the array being passed
+  // turnary => if current element (val) greater than the value of arr[iMax] then i is now iMax otherwidse iMax is still the highest
+  let indexOfMaxVal = array.reduce((iMax, cur, i, arr) => {
+    return cur > arr[iMax] ? i : iMax
+  }, 0)
+  return indexOfMaxVal
+}
+// return the index of the highest number
+// call the function
 
+console.log('Problem #19')
+console.log(indexHighestNumber(highIndexArr1))
+console.log(indexHighestNumber(highIndexArr2))
+console.log(indexHighestNumber(highIndexArr3))
 // ************************************************************************
-
+// Problem #20
 // Create a function that takes in a string and returns only the middle value
-// var testString1 = "hello" Expected output --> "l" var testString2 = "boogeyman" Expected output --> "e"
+let testString1 = 'hello' // Expected output --> "l"
+let testString2 = 'boogeyman' // Expected output --> "e"
+
+// create a function that takes in a string
+const middleLetter = str => {
+  // convert string to array
+  let stringToArray = str.split('')
+  // determine length of array divided by 2 - 1 to get index
+  let middleIndex = Math.ceil(stringToArray.length / 2 - 1)
+  // return the letter at the middle index
+  return stringToArray[middleIndex]
+}
+
+// call the function
+
+console.log('Problem #20')
+console.log(middleLetter(testString1))
+console.log(middleLetter(testString2))
 
 // ************************************************************************
-
 // STRETCH Challenges
+
+// Problem #21
 // Palindrome: Create a function that takes in a string and determines whether the string is a palindrome (the same word forward and backwards)
-// var isPalindrome1 = "racecar"
+let word1 = 'racecar' // Expected output --> "Yes racecar is a palindrome"
 
-// Expected output --> "Yes racecar is a palindrome"
+let word2 = 'albatross' // Expected output --> "No albatross is not a palindrome"
 
-// var isPalindrome2 = "albatross"
+// create function that takes in a string
+const isPalindrome = str => {
+  // create variable to hold reversed string
+  const revString = str.split('').reverse().join('')
+  // create conditional
+  // if string supplied is palidrome
+  if (str === revString) {
+    // return "Yes <string> is a palindrome"
+    return `Yes ${str} is a palindrome`
+  } else {
+    // if string supplied is not palidrome
+    // return "No <string> is not a palindrome"
+    return `No ${str} is not a palindrome`
+  }
+}
 
-// Expected output --> "No albatross is not a palindrome"
+// call the function
+console.log('Problem #21')
+console.log(isPalindrome(word1))
+console.log(isPalindrome(word2))
 
 // ************************************************************************
-
+// Problem #22
 // Vowels Removed: Create a function that takes in a string and returns a new string with all the vowels removed
-// var fullString1 = "javascript is awesome"
+let fullString1 = 'javascript is awesome' // Expected output --> "jvscrpt s wsm"
 
-// Expected output --> "jvscrpt s wsm"
+let fullString2 = 'I am a LEARN student' // Expected output --> "m LRN stdnt"
 
-// var fullString2 = "I am a LEARN student"
+// create function that takes a string as an argument
+const vowelRemover = str => {
+  // create variable that contains an array of vowels
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  // create a variable that converts given string argument to lowercase then to an array
+  let strToArray = str.toLowerCase().split('')
+  // create variable to hold newly created array of letters with vowels removed
+  let result = strToArray.filter(letter => {
+    return !vowels.includes(letter)
+  })
+  // return result array and join() to create new string
+  return result.join('')
+}
 
-// Expected output --> "m LRN stdnt"
+// call the function
+console.log('Problem #22')
+console.log(vowelRemover(fullString1))
+console.log(vowelRemover(fullString2))
 
 // ************************************************************************
-
+// Problem #23
 // Merge Arrays: Create a function that takes in two arrays as arguments and returns one array with no duplicate values.
-// var arr1 = [3, 7, 10, 5, 4, 3, 3]
-
-// var arr2 = [7, 8, 2, 3, 1, 5, 4]
-
 // Expected output --> [3, 7, 10, 5, 4, 8, 2, 1]
 
-// ************************************************************************
+let arr1 = [3, 7, 10, 5, 4, 3, 3]
+let arr2 = [7, 8, 2, 3, 1, 5, 4]
 
+// create function that takes in two arrays of numbers
+const mergeArrays = (arr1, arr2) => {
+  // combine arrays to one array
+  // create set to remove any duplicates
+  const set = new Set([...arr1, ...arr2])
+  const mergedArray = [...set]
+  // return new merged duplicate free array
+  return mergedArray
+}
+
+// call the function
+console.log('Problem #23')
+console.log(mergeArrays(arr1, arr2))
+
+// ************************************************************************
+// Problem #24
 // Clean Function: Create a function that filters false, null, 0 and blank values from an array.
-// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+let filterArray1 = [58, '', 'abcd', true, null, false, 0] // Expected output --> [58, "abcd", true]
 
-// Expected output --> [58, "abcd", true]
+// create a function that removes any items not to be included in filtered array
+const isWantedValue = value => {
+  // create a conditional that returns only wanted values
+  if (value !== false || value !== null || value !== 0 || value !== '') {
+    // return wanted values
+    return value
+  }
+}
+
+// create function that takes in an array
+const filterArrayValues = arr => {
+  // iterate through given array to filter out values wanted
+  const cleanedArray = arr.filter(isWantedValue)
+  // return the cleaned array
+  return cleanedArray
+}
+
+// call the function
+
+console.log('Problem #24')
+console.log(filterArrayValues(filterArray1))
 
 // ************************************************************************
-
+// Problem #25
 // Pre-fill: Write a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
-// fillArray = (6, 0)
+// fillArray = (6, 0) expected output --> [0, 0, 0, 0, 0, 0]
+// fillArray = (4, 11) expected output --> [11, 11, 11, 11]
 
-// expected output --> [0, 0, 0, 0, 0, 0]
+// create a function that takes two numbers as arguments
+const fillArray = (num1, num2) => {
+  // create a variable to hold created array
+  const filledArray = new Array(num1).fill(num2)
+  // return an array the length of the first number filled with the second number
+  return filledArray
+}
 
-// fillArray = (4, 11)
-
-// expected output --> [11, 11, 11, 11]
+// call the function
+console.log('Problem #25')
+console.log(fillArray(6, 0))
+console.log(fillArray(4, 11))
 
 // ************************************************************************
-
+// Problem #26
 // Create a function named addUp that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
-// addUp = (4)
+// addUp = (4) Expected output --> 10
+// addUp = (13) Expected output --> 91
+// addUp = (600) Expected output --> 180300
 
-// Expected output --> 10
+// create a function named addUp that takes a number as an argument.
+const addUp = num => {
+  let sum = 0
+  for (let i = 0; i <= num; i++) {
+    sum += i
+  }
+  return sum
+}
+// create a loop that lasts number value
+// return added up numbers
 
-// addUp = (13)
-
-// Expected output --> 91
-
-// addUp = (600)
-
-// Expected output --> 180300
+console.log('Problem #26')
+console.log(addUp(4))
+console.log(addUp(13))
+console.log(addUp(600))
 
 // ************************************************************************
 
