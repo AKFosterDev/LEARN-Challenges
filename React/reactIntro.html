@@ -1,0 +1,80 @@
+<!-- The goal of the following challenge is for you to practice nesting components and getting familiar with class based component syntax.
+
+Create a new HTML file. Copy the following code into your file: -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<script
+			src="https://unpkg.com/react@16/umd/react.development.js"
+			crossorigin
+		></script>
+		<script
+			src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+			crossorigin
+		></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<title>Intro to React</title>
+	</head>
+	<body>
+		<div id="react-container"></div>
+
+		<script type="text/babel">
+			class App extends React.Component {
+				render() {
+					return (
+			         <Header />
+			         <Content />
+			         <Footer />
+			       )
+				}
+			}
+
+			class Header extends React.Component {
+				render() {
+					return <h1>Echo 2020 Cohort</h1>
+				}
+			}
+
+			class Content extends React.Component {
+				render() {
+					return (
+						<div>
+							<ul>
+								<li>Alan</li>
+								<li>Alejandro</li>
+								<li>Amanda</li>
+								<li>Chris</li>
+								<li>Filippo</li>
+								<li>Matt</li>
+								<li>Priscila</li>
+								<li>Raul</li>
+								<li>Ryan</li>
+								<li>Sami</li>
+								<li>Summer</li>
+							</ul>
+						</div>
+					)
+				}
+			   }
+
+			   class Footer extends React.Component {
+			     render(
+			       return{
+			         <p>Amanda and ?????</p>
+			       }
+			     )
+			   }
+
+			const domContainer = document.querySelector('#react-container')
+			ReactDOM.render(<App />, domContainer)
+		</script>
+	</body>
+</html>
+
+<!-- Here are your stories: 
+As a user, I see a Header component with the name of you cohort 
+As a user, I can see a Content component that contains a list of all your classmates 
+As a user, I can see a Footer component with the names
+of you and your partner -->
