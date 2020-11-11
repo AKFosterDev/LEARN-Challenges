@@ -1,11 +1,14 @@
 import React, { Component, Fragment } from 'react'
+import Header from './components/Header'
+import Favorites from './components/Favorites'
 import './App.css'
 
 class App extends Component {
 	render() {
 		return (
 			<Fragment>
-				<h1>Our Top 5</h1>
+				<Header />
+				<Favorites />
 			</Fragment>
 		)
 	}
