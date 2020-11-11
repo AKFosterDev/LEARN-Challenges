@@ -1,0 +1,16 @@
+body {
+	background-image: linear-gradient(
+		to top,
+		#c09a91,
+		#d1b1b4,
+		#decbd3,
+		#ebe5ec,
+		#ffffff
+	);
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+h1 {
+	color: #914b4c;
+}
