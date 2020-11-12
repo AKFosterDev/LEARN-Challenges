@@ -3,8 +3,8 @@
 
 // create function named marco
 const marco = () => {
-  // return "polo"
-  return 'polo'
+	// return "polo"
+	return 'polo'
 }
 
 // call function
@@ -16,9 +16,9 @@ console.log(marco())
 // Write a function named greeting that takes a name as an argument and returns "Welcome, <person's name here>!"
 
 // create function named greeting that takes a name as an argument
-const greeting = name => {
-  // return "Welcome, <person's name here>!"
-  return `Welcome, ${name}!`
+const greeting = (name) => {
+	// return "Welcome, <person's name here>!"
+	return `Welcome, ${name}!`
 }
 
 // call function
@@ -30,16 +30,16 @@ console.log(greeting('Amanda'))
 // Write a function named oddOrEven that takes a number as an argument and returns whether the number is odd or even.
 
 // create function named oddOrEven that takes a number as an argument
-const oddOrEven = num => {
-  // create conditional that checks if argument is even
-  if (num % 2 === 0) {
-    // return "even"
-    return 'even'
-  } else {
-    // if not even
-    // return odd
-    return 'odd'
-  }
+const oddOrEven = (num) => {
+	// create conditional that checks if argument is even
+	if (num % 2 === 0) {
+		// return "even"
+		return 'even'
+	} else {
+		// if not even
+		// return odd
+		return 'odd'
+	}
 }
 
 // call function
@@ -52,9 +52,9 @@ console.log(oddOrEven(20))
 // Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
 
 // create function named triple that takes a number argument
-const triple = num => {
-  // return number argument multiplied by 3
-  return num * 3
+const triple = (num) => {
+	// return number argument multiplied by 3
+	return num * 3
 }
 
 // call function
@@ -69,8 +69,8 @@ console.log(triple(45))
 
 // create function named multiply that takes two numbers as arguments
 const multiply = (num1, num2) => {
-  // return the result of the numbers being multiplied by the other
-  return num1 * num2
+	// return the result of the numbers being multiplied by the other
+	return num1 * num2
 }
 
 // call function
@@ -84,12 +84,12 @@ console.log(multiply(15, 2))
 
 // create function named divisibleBy that takes two numbers as arguments
 const divisibleBy = (num1, num2) => {
-  // create conditional to see if num1 is evenly divisible by num2
-  if (num1 % num2 === 0) {
-    // return whether the first number is evenly divisible by the second
-    // logs "<num1> is evenly divisible by <num2>"
-    return `${num1} is evenly divisible by ${num2}`
-  }
+	// create conditional to see if num1 is evenly divisible by num2
+	if (num1 % num2 === 0) {
+		// return whether the first number is evenly divisible by the second
+		// logs "<num1> is evenly divisible by <num2>"
+		return `${num1} is evenly divisible by ${num2}`
+	}
 }
 
 // call function
@@ -101,22 +101,22 @@ console.log(divisibleBy(10, 5))
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
 
 // create function named assignGrade that takes a number score as argument
-const assignGrade = score => {
-  // create conditional to check what letter grade should be returned
-  // return the letter grade for the score argument given
-  if (score >= 90) {
-    return 'A'
-  } else if (score >= 80) {
-    return 'B'
-  } else if (score >= 70) {
-    return 'C'
-  } else if (score >= 60) {
-    return 'D'
-  } else if (score >= 50) {
-    return 'F'
-  } else {
-    return 'You REALLY need to study!'
-  }
+const assignGrade = (score) => {
+	// create conditional to check what letter grade should be returned
+	// return the letter grade for the score argument given
+	if (score >= 90) {
+		return 'A'
+	} else if (score >= 80) {
+		return 'B'
+	} else if (score >= 70) {
+		return 'C'
+	} else if (score >= 60) {
+		return 'D'
+	} else if (score >= 50) {
+		return 'F'
+	} else {
+		return 'You REALLY need to study!'
+	}
 }
 
 // call function
@@ -138,13 +138,13 @@ console.log(assignGrade(10))
 
 // create function called greaterNum that takes in 2 numbers as arguments
 const greaterNum = (num1, num2) => {
-  // create conditional to determine greater number
-  // return whichever number argument is greater
-  if (num1 > num2) {
-    return `${num1} is greater than ${num2}`
-  } else {
-    return `${num2} is greater than ${num1}`
-  }
+	// create conditional to determine greater number
+	// return whichever number argument is greater
+	if (num1 > num2) {
+		return `${num1} is greater than ${num2}`
+	} else {
+		return `${num2} is greater than ${num1}`
+	}
 }
 
 // call function
@@ -160,22 +160,22 @@ console.log(greaterNum(438, 536))
 
 // create function called helloWorld that takes in 1 argument - a language code ("es", "de", "en") default (code = en)
 const helloWorld = (code = 'en') => {
-  // create conditional to check language
-  if (code === 'en') {
-    // if code is "en" return "Hello, World!" also default
-    return 'Hello, World!'
-  } else if (code === 'fr') {
-    // if code is "fr" return "Bonjour le monde!"
-    return 'Bonjour le monde!'
-  } else if (code === 'es') {
-    // if code is "es" return "Hola, Mundo!"
-    return 'Hola, Mundo!'
-  } else if (code === 'de') {
-    // if code is "de" return "Hallo, Welt!"
-    return 'Hallo, Welt!'
-  } else {
-    return 'Please enter one of these language codes: en, fr, es, de'
-  }
+	// create conditional to check language
+	if (code === 'en') {
+		// if code is "en" return "Hello, World!" also default
+		return 'Hello, World!'
+	} else if (code === 'fr') {
+		// if code is "fr" return "Bonjour le monde!"
+		return 'Bonjour le monde!'
+	} else if (code === 'es') {
+		// if code is "es" return "Hola, Mundo!"
+		return 'Hola, Mundo!'
+	} else if (code === 'de') {
+		// if code is "de" return "Hallo, Welt!"
+		return 'Hallo, Welt!'
+	} else {
+		return 'Please enter one of these language codes: en, fr, es, de'
+	}
 }
 
 // call the function
@@ -201,26 +201,26 @@ console.log(helloWorld('de'))
 
 // create function named pluralizer that takes 2 arguments - a number (value) and a singular noun
 const pluralizer = (value, noun) => {
-  // create conditional to determine if the value is 1 or less
-  if (value <= 1) {
-    // if it is return the number and singular form of the noun
-    return `${value} ${noun}`
-  } else {
-    // if the number is greater than 1 return the number and pluralized form of the noun if necessary
-    if (noun === 'goose') {
-      // if the noun is goose return number and geese
-      return `${value} geese`
-    } else if (noun === 'child') {
-      // if the noun is child return number and children
-      return `${value} children`
-    } else if (noun === 'person') {
-      // if the noun is person return number and people
-      return `${value} people`
-    } else {
-      // else return value and noun with an s
-      return `${value} ${noun}s`
-    }
-  }
+	// create conditional to determine if the value is 1 or less
+	if (value <= 1) {
+		// if it is return the number and singular form of the noun
+		return `${value} ${noun}`
+	} else {
+		// if the number is greater than 1 return the number and pluralized form of the noun if necessary
+		if (noun === 'goose') {
+			// if the noun is goose return number and geese
+			return `${value} geese`
+		} else if (noun === 'child') {
+			// if the noun is child return number and children
+			return `${value} children`
+		} else if (noun === 'person') {
+			// if the noun is person return number and people
+			return `${value} people`
+		} else {
+			// else return value and noun with an s
+			return `${value} ${noun}s`
+		}
+	}
 }
 
 // call the function
@@ -241,13 +241,13 @@ let testArr1 = [3, 9, 15, 4, 10]
 let testArr2 = [4, 25, 67, 26, 93, 1234]
 
 // create function that takes an array of numbers as an argument
-const tripled = arr => {
-  // create variable to hold mapped array
-  let tripledArray = arr.map(num => {
-    // return each number multiplied by 3
-    return num * 3
-  })
-  return tripledArray
+const tripled = (arr) => {
+	// create variable to hold mapped array
+	let tripledArray = arr.map((num) => {
+		// return each number multiplied by 3
+		return num * 3
+	})
+	return tripledArray
 }
 
 // call the function
@@ -263,16 +263,16 @@ console.log(tripled(testArr2))
 let testArr3 = [0, 2, -7, 3, 5, 8, 10, 13]
 
 // create function that takes an array of numbers as an argument
-const removeOddNumbers = arr => {
-  // create variable to hold filtered array of odd numbers
-  let oddNumbers = arr.filter(num => {
-    if (num % 2 !== 0) {
-      return num
-    }
-  })
+const removeOddNumbers = (arr) => {
+	// create variable to hold filtered array of odd numbers
+	let oddNumbers = arr.filter((num) => {
+		if (num % 2 !== 0) {
+			return num
+		}
+	})
 
-  // return the new array of odd numbers
-  return oddNumbers
+	// return the new array of odd numbers
+	return oddNumbers
 }
 
 // call the function
@@ -290,9 +290,9 @@ let myMessage = 'Hello There'
 let myMessage2 = 'Rockin it'
 
 // declare a function that takes a string
-const makeAllCaps = str => {
-  // return string in all caps
-  return str.toUpperCase()
+const makeAllCaps = (str) => {
+	// return string in all caps
+	return str.toUpperCase()
 }
 
 // call the function
@@ -306,33 +306,35 @@ console.log(makeAllCaps(myMessage2))
 // Expected output --> "nicework"
 
 let comboArr = [
-  7,
-  'n',
-  true,
-  'i',
-  'c',
-  10,
-  'e',
-  -388,
-  'w',
-  3,
-  'o',
-  0,
-  'r',
-  false,
-  'k',
+	7,
+	'n',
+	true,
+	'i',
+	'c',
+	10,
+	'e',
+	-388,
+	'w',
+	3,
+	'o',
+	0,
+	'r',
+	false,
+	'k',
 ]
 
 // create a function that takes an array
-const keepStringsOnly = arr => {
-  // loop through array to filter out the strings
-  // create condition to check type is string
-  let stringOnlyArray = arr.filter(item => {
-    return typeof item === 'string'
-  })
-  // return new array converted to a string
-  return stringOnlyArray.join('')
+const keepStringsOnly = (arr) => {
+	// loop through array to filter out the strings
+	// create condition to check type is string
+	let stringOnlyArray = arr.filter((item) => {
+		return typeof item === 'string'
+	})
+	// return new array converted to a string
+	return stringOnlyArray.join('')
 }
+
+// refactor:
 
 // call the function
 console.log('Problem #14')
@@ -346,9 +348,9 @@ console.log(keepStringsOnly(comboArr))
 let numberArray1 = [1, 45, 4, 2, 7, 67, -96, 0, 6]
 
 // create a function that takes in an array of numbers
-const highestNumber = arr => {
-  // return highest number
-  return Math.max.apply(null, arr)
+const highestNumber = (arr) => {
+	// return highest number
+	return Math.max.apply(null, arr)
 }
 
 // call the function
@@ -363,9 +365,9 @@ console.log(highestNumber(numberArray1))
 let numberArray2 = [1, 45, 4, 2, 7, 67, -9, 0, 6]
 
 // create a function that takes in an array of numbers
-const lowestNumber = arr => {
-  // return highest number
-  return Math.min.apply(null, arr)
+const lowestNumber = (arr) => {
+	// return highest number
+	return Math.min.apply(null, arr)
 }
 // call the function
 console.log('Problem #16')
@@ -380,18 +382,18 @@ var addThese1 = [1, 2, 3, 4] // Expected output --> 10
 var addThese2 = [] // Expected output --> 0
 
 // create function that takes in an array of numbers
-const addThemUp = arr => {
-  // add each number in the array together
-  // what is happening here...using addThese1 array
-  // acc = 0, cur = 1 => acc = 1
-  // acc = 1, cur = 2 => acc = 3
-  // acc = 3, cur = 3 => acc = 6
-  // acc = 6, cur = 4 => acc = 10
-  const sum = arr.reduce((acc, cur) => {
-    return acc + cur
-  }, 0) // this 0 sets the acc value
-  // return sum of all nums in array
-  return sum
+const addThemUp = (arr) => {
+	// add each number in the array together
+	// what is happening here...using addThese1 array
+	// acc = 0, cur = 1 => acc = 1
+	// acc = 1, cur = 2 => acc = 3
+	// acc = 3, cur = 3 => acc = 6
+	// acc = 6, cur = 4 => acc = 10
+	const sum = arr.reduce((acc, cur) => {
+		return acc + cur
+	}, 0) // this 0 sets the acc value
+	// return sum of all nums in array
+	return sum
 }
 
 // call the function
@@ -407,13 +409,13 @@ let meanArray1 = [1, 2, 3] // Expected output --> 2
 let meanArray2 = [5, 9, 7, 8] // Expected output --> 7.25
 
 // create a function that takes in an array of numbers
-const meanChecker = arr => {
-  // create loop to add all numbers together
-  const sum = arr.reduce((acc, cur) => {
-    return acc + cur
-  }, 0)
-  // return that sum divided by the length of the array
-  return sum / arr.length
+const meanChecker = (arr) => {
+	// create loop to add all numbers together
+	const sum = arr.reduce((acc, cur) => {
+		return acc + cur
+	}, 0)
+	// return that sum divided by the length of the array
+	return sum / arr.length
 }
 
 // call the function
@@ -429,18 +431,18 @@ let highIndexArr2 = [99, 42, 53, 74] // Expected output --> 1
 let highIndexArr3 = [11, 38, 79] // Expected output --> 1
 
 // create a function that takes in an array of numbers
-const indexHighestNumber = array => {
-  // create loop to compare index of values
-  // what is happening here?
-  // iMax => index of max element so far
-  // cur => currently tested element in array (value)
-  // i => currently tested index
-  // arr => the array being passed
-  // turnary => if current element (val) greater than the value of arr[iMax] then i is now iMax otherwidse iMax is still the highest
-  let indexOfMaxVal = array.reduce((iMax, cur, i, arr) => {
-    return cur > arr[iMax] ? i : iMax
-  }, 0)
-  return indexOfMaxVal
+const indexHighestNumber = (array) => {
+	// create loop to compare index of values
+	// what is happening here?
+	// iMax => index of max element so far
+	// cur => currently tested element in array (value)
+	// i => currently tested index
+	// arr => the array being passed
+	// turnary => if current element (val) greater than the value of arr[iMax] then i is now iMax otherwidse iMax is still the highest
+	let indexOfMaxVal = array.reduce((iMax, cur, i, arr) => {
+		return cur > arr[iMax] ? i : iMax
+	}, 0)
+	return indexOfMaxVal
 }
 // return the index of the highest number
 // call the function
@@ -456,13 +458,13 @@ let testString1 = 'hello' // Expected output --> "l"
 let testString2 = 'boogeyman' // Expected output --> "e"
 
 // create a function that takes in a string
-const middleLetter = str => {
-  // convert string to array
-  let stringToArray = str.split('')
-  // determine length of array divided by 2 - 1 to get index
-  let middleIndex = Math.ceil(stringToArray.length / 2 - 1)
-  // return the letter at the middle index
-  return stringToArray[middleIndex]
+const middleLetter = (str) => {
+	// convert string to array
+	let stringToArray = str.split('')
+	// determine length of array divided by 2 - 1 to get index
+	let middleIndex = Math.ceil(stringToArray.length / 2 - 1)
+	// return the letter at the middle index
+	return stringToArray[middleIndex]
 }
 
 // call the function
@@ -481,19 +483,19 @@ let word1 = 'racecar' // Expected output --> "Yes racecar is a palindrome"
 let word2 = 'albatross' // Expected output --> "No albatross is not a palindrome"
 
 // create function that takes in a string
-const isPalindrome = str => {
-  // create variable to hold reversed string
-  const revString = str.split('').reverse().join('')
-  // create conditional
-  // if string supplied is palidrome
-  if (str === revString) {
-    // return "Yes <string> is a palindrome"
-    return `Yes ${str} is a palindrome`
-  } else {
-    // if string supplied is not palidrome
-    // return "No <string> is not a palindrome"
-    return `No ${str} is not a palindrome`
-  }
+const isPalindrome = (str) => {
+	// create variable to hold reversed string
+	const revString = str.split('').reverse().join('')
+	// create conditional
+	// if string supplied is palidrome
+	if (str === revString) {
+		// return "Yes <string> is a palindrome"
+		return `Yes ${str} is a palindrome`
+	} else {
+		// if string supplied is not palidrome
+		// return "No <string> is not a palindrome"
+		return `No ${str} is not a palindrome`
+	}
 }
 
 // call the function
@@ -509,17 +511,17 @@ let fullString1 = 'javascript is awesome' // Expected output --> "jvscrpt s wsm"
 let fullString2 = 'I am a LEARN student' // Expected output --> "m LRN stdnt"
 
 // create function that takes a string as an argument
-const vowelRemover = str => {
-  // create variable that contains an array of vowels
-  const vowels = ['a', 'e', 'i', 'o', 'u']
-  // create a variable that converts given string argument to lowercase then to an array
-  let strToArray = str.toLowerCase().split('')
-  // create variable to hold newly created array of letters with vowels removed
-  let result = strToArray.filter(letter => {
-    return !vowels.includes(letter)
-  })
-  // return result array and join() to create new string
-  return result.join('')
+const vowelRemover = (str) => {
+	// create variable that contains an array of vowels
+	const vowels = ['a', 'e', 'i', 'o', 'u']
+	// create a variable that converts given string argument to lowercase then to an array
+	let strToArray = str.toLowerCase().split('')
+	// create variable to hold newly created array of letters with vowels removed
+	let result = strToArray.filter((letter) => {
+		return !vowels.includes(letter)
+	})
+	// return result array and join() to create new string
+	return result.join('')
 }
 
 // call the function
@@ -537,12 +539,12 @@ let arr2 = [7, 8, 2, 3, 1, 5, 4]
 
 // create function that takes in two arrays of numbers
 const mergeArrays = (arr1, arr2) => {
-  // combine arrays to one array
-  // create set to remove any duplicates
-  const set = new Set([...arr1, ...arr2])
-  const mergedArray = [...set]
-  // return new merged duplicate free array
-  return mergedArray
+	// combine arrays to one array
+	// create set to remove any duplicates
+	const set = new Set([...arr1, ...arr2])
+	const mergedArray = [...set]
+	// return new merged duplicate free array
+	return mergedArray
 }
 
 // call the function
@@ -555,20 +557,20 @@ console.log(mergeArrays(arr1, arr2))
 let filterArray1 = [58, '', 'abcd', true, null, false, 0] // Expected output --> [58, "abcd", true]
 
 // create a function that removes any items not to be included in filtered array
-const isWantedValue = value => {
-  // create a conditional that returns only wanted values
-  if (value !== false || value !== null || value !== 0 || value !== '') {
-    // return wanted values
-    return value
-  }
+const isWantedValue = (value) => {
+	// create a conditional that returns only wanted values
+	if (value !== false || value !== null || value !== 0 || value !== '') {
+		// return wanted values
+		return value
+	}
 }
 
 // create function that takes in an array
-const filterArrayValues = arr => {
-  // iterate through given array to filter out values wanted
-  const cleanedArray = arr.filter(isWantedValue)
-  // return the cleaned array
-  return cleanedArray
+const filterArrayValues = (arr) => {
+	// iterate through given array to filter out values wanted
+	const cleanedArray = arr.filter(isWantedValue)
+	// return the cleaned array
+	return cleanedArray
 }
 
 // call the function
@@ -584,10 +586,10 @@ console.log(filterArrayValues(filterArray1))
 
 // create a function that takes two numbers as arguments
 const fillArray = (num1, num2) => {
-  // create a variable to hold created array
-  const filledArray = new Array(num1).fill(num2)
-  // return an array the length of the first number filled with the second number
-  return filledArray
+	// create a variable to hold created array
+	const filledArray = new Array(num1).fill(num2)
+	// return an array the length of the first number filled with the second number
+	return filledArray
 }
 
 // call the function
@@ -603,12 +605,12 @@ console.log(fillArray(4, 11))
 // addUp = (600) Expected output --> 180300
 
 // create a function named addUp that takes a number as an argument.
-const addUp = num => {
-  let sum = 0
-  for (let i = 0; i <= num; i++) {
-    sum += i
-  }
-  return sum
+const addUp = (num) => {
+	let sum = 0
+	for (let i = 0; i <= num; i++) {
+		sum += i
+	}
+	return sum
 }
 // create a loop that lasts number value
 // return added up numbers
