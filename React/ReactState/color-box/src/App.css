@@ -7,7 +7,7 @@
 body {
 	display: flex;
 	align-items: center;
-	background-color: gray;
+	background-color: rgb(163, 161, 161);
 	justify-content: center;
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
@@ -15,10 +15,10 @@ body {
 }
 
 button {
-	background: purple;
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	border: none;
-	color: black;
 	font-size: 2rem;
+	font-family: inherit;
+	text-transform: uppercase;
 }

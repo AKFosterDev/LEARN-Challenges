@@ -4,23 +4,30 @@ class ColorBox extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			colors: ['red', 'orange', 'yellow', 'green', 'blue', 'purple'],
-			color: 'white',
+			color: 'blue',
 		}
 	}
 
-	onClickHandler(e) {
-		// e.preventDefault()
-		// let newColor =
-		this.state.colors.map(color => {
-			this.setState({ color })
+	onClickHandler() {
+		// array of colors to be iterated and used to set new state
+		const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
+		// on click of button iterates to the next item in the array of colors
+		// color state is updated to the current value in the array
+
+		const newColor = colors.map(color => {
+			return console.log(color)
 		})
-		// this.setState((color: newColor))
+		this.setState({ color: newColor })
 	}
 
 	render() {
 		const styleObject = {
 			background: this.state.color,
+			color:
+				this.state.color === 'white' || this.state.color === 'yellow'
+					? { color: 'black' }
+					: { color: 'white' },
+			fontWeight: 'bold',
 		}
 
 		return (
