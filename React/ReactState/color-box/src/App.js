@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ColorBox from './ColorBox'
+import ColorBox from './components/ColorBox'
 import './App.css'
 
 class App extends Component {
