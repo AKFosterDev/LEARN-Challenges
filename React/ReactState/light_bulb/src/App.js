@@ -1,12 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import LightBulb from './components/Lightbulb'
 import './App.css'
 
 class App extends Component {
 	render() {
 		return (
-			<div>
-				<h1>Light Bulb Challenge</h1>
-			</div>
+			<Fragment>
+				<LightBulb />
+			</Fragment>
 		)
 	}
 }
