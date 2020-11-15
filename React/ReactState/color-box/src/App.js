@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import ColorBox from './ColorBox'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import ColorBoxScreen from './screens/ColorBoxScreen'
+import ColorBox from './components/ColorBox'
 import './App.css'
 
 class App extends Component {
