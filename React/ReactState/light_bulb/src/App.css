@@ -9,22 +9,11 @@
 body {
 	display: flex;
 	align-items: center;
-	background-color: rgb(163, 161, 161);
 	justify-content: center;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
 	min-height: 100vh;
-}
-
-.colorBtn {
-	/* display: inline-block; */
-	/* margin: 5px; */
-	cursor: pointer;
-	width: 200px;
-	height: 200px;
-	border: none;
-	font-size: 2rem;
-	font-family: inherit;
-	font-weight: bold;
-	text-transform: uppercase;
-	/* color: white; */
+	background-color: #fff;
+	color: #333;
 }
