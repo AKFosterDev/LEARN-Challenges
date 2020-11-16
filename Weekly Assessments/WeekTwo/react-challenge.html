@@ -36,8 +36,9 @@ HINT: Check the console in the browser developer tools for errors. -->
 				}
 
 				handleMoodOptions = () => {
+					let { moods } = this.state
 					let randomIndex = Math.floor(Math.random() * this.state.moods.length)
-					this.setState({ currentMood: this.state.moods[randomIndex] })
+					this.setState({ currentMood: moods[randomIndex] })
 				}
 
 				render() {
