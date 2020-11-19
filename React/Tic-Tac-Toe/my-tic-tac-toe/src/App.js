@@ -16,7 +16,7 @@ class App extends Component {
 	// handleGamePlay method
 	// take in the index as an argument and passed from the square component
 
-	handleGamePlay = (index) => {
+	handleGamePlay = (i) => {
 		const { squares, currentPlayer, winner, counter } = this.state
 
 		// if index of clicked square is null the square can be updated and game isn't over (no winner)
