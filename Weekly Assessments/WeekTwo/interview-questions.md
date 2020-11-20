@@ -33,8 +33,15 @@ reconciliation.
 3. When creating a basic (stateless) class component in React, what are the
    necessary elements needed to display "Hello World" in the browser?
 
-Your answer: The render method is not necessary. Only the return is necessary,
+Your answer: For a functional component the render method is not necessary. Only the return is necessary,
 like this: const ComponentName = () => { return ( <div> 'Hello World' </div> ) }
+
+For a class based component this is required besides the imports and exports.
+class ComponentName extends Component {
+render() {
+return ( <div> 'Hello World' </div>)
+}
+}
 
 Researched answer: The literal difference between stateful and stateless
 components is that one has state, and the other doesn’t. That means the stateful
@@ -55,7 +62,7 @@ behind the scenes.
 5. What is state in React?
 
 Your answer: State is an object that represents static data and behavior within
-a React component.
+a React component. State cannot be manipulated directly. You use setState({}) to update state.
 
 Researched answer: The state is an instance of React Component Class can be
 defined as an object of a set of observable properties that control the behavior

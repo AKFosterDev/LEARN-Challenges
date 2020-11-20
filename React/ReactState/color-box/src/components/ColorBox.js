@@ -1,36 +1,42 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 
 class ColorBox extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			colors: ['red', 'orange', 'yellow', 'green', 'blue', 'purple'],
-			currentColor: '',
+			color: 'white',
 		}
 	}
 
 	onClickHandler = () => {
-		let randomIndex = Math.floor(Math.random() * this.state.colors.length)
-		this.setState({ currentColor: this.state.colors[randomIndex] })
+		// array of colors to be iterated and used to set new state of color
+		const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
+		// on click of button iterates to the next item in the array of colors
+		// color state is updated to the current value in the array
+
+		// magic 8 ball
 	}
 
 	render() {
 		const styleObject = {
-			background: this.state.currentColor,
-			color: this.state.currentColor === 'yellow' ? 'black' : 'white',
+			background: this.state.color,
+			color:
+				this.state.color === 'white' || this.state.color === 'yellow'
+					? 'black'
+					: 'white',
+			fontWeight: 'bold',
 		}
 
 		return (
-			<Fragment>
+			<div>
 				<button
-					className='colorBtn'
 					style={styleObject}
 					onClick={this.onClickHandler}
 					// value={this.state.color}
 				>
-					{this.state.currentColor}
+					{this.state.color}
 				</button>
-			</Fragment>
+			</div>
 		)
 	}
 }
