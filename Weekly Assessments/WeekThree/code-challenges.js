@@ -75,12 +75,12 @@ console.log(middleCharFinder(middleLetters2))
 //create a class
 class SphereArea {
 	constructor(radius) {
-		this.radius = radius * radius
+		this.radiusSquared = radius * radius
 	}
 
 	// create a method that calculates the area of a sphere
 	calculateArea() {
-		return 4 * Math.PI * this.radius
+		return 4 * Math.PI * this.radiusSquared
 	}
 }
 
