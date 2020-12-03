@@ -2,6 +2,8 @@
 // What drew you to learning development?
 // What are you strengths as a developer?
 // As a developer, what are your weaknesses?
+// What is your dream job?
+// When you are working in a group what role do you find yourself naturally gravitating toward?
 
 // Q: What is the difference between an array's index and the array's value?
 // A: The index is the location of each value in the array
@@ -38,10 +40,17 @@
 // A: Arrays are iterable where objects are not
 // A: Arrays are indexed
 
-// Q:
-// A:
+// Q: What action does the modulo operator perform?
+// A: It returns the remainder of a division operation
 
-// Q:
+// Q: How is a symbol different from a variable or a string?
+// ADD TO THIS ANSWER *****************
+// A: A symbol is a data type that is given inherently and uniquely given as a key where a variable or a string is declared.
+
+// Q: What is string interpolations?
+// A: pulls dynamic data like variables into a string output
+
+// Q: When talking about github. What is the difference between cloning and pulling from a repository?
 // A:
 
 // Q:
