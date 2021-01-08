@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Jumbotron {
+	background-image: url('./assets/cat1');
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justifycontent: center;
+	align-items: flex-start;
+	color: black;
+} */
