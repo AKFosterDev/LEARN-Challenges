@@ -1,16 +1,22 @@
 import React, { Component, Fragment } from 'react'
 import { Navbar, Nav, NavLink } from 'reactstrap'
+import '../../src/App.css'
 
 class Header extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Navbar className='nav-bar' float='right' bg='light' variant='light'>
-					{/* <Navbar.Brand href='#home'>Navbar</Navbar.Brand> */}
-					<Nav className='mr-auto'>
-						<NavLink href='/'>Home</NavLink>
-						<NavLink href='/catindex'>Meet the Cats</NavLink>
-						<NavLink href='/catnew'>Add a Cat</NavLink>
+				<Navbar id='top' className='nav-bar' bg='light' variant='light'>
+					<Nav className='ml-auto'>
+						<NavLink className='header-link' href='/'>
+							Home
+						</NavLink>
+						<NavLink className='header-link' href='/catindex'>
+							Meet the Cats
+						</NavLink>
+						<NavLink className='header-link' href='/catnew'>
+							Add a Cat
+						</NavLink>
 					</Nav>
 				</Navbar>
 			</Fragment>

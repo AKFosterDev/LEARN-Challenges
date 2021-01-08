@@ -4,13 +4,28 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-/* Jumbotron {
-	background-image: url('./assets/cat1');
+.header-link {
+	color: black;
+}
+
+.jumbo-img {
 	background-size: cover;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justifycontent: center;
-	align-items: flex-start;
+	justify-content: center;
+}
+
+.text {
 	color: black;
-} */
+}
+
+.arrow-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.up-arrow {
+	font-size: 2rem;
+}

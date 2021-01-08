@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Jumbotron, Button } from 'reactstrap'
+import '../../src/App.css'
 import bgImage from '../assets/cat2.jpg'
 
 class NotFound extends Component {
@@ -12,13 +13,13 @@ class NotFound extends Component {
 				className='jumbo-img'
 				style={{
 					backgroundImage: `url(${bgImage})`,
-					backgroundSize: 'cover',
-					height: '100vh',
-					display: 'flex',
-					flexDirection: 'column',
-					justifyContent: 'center',
-					alignItems: 'flex-start',
-					color: 'black',
+					// backgroundSize: 'cover',
+					// height: '100vh',
+					// display: 'flex',
+					// flexDirection: 'column',
+					// justifyContent: 'center',
+					// alignItems: 'flex-start',
+					// color: 'black',
 				}}
 			>
 				<h1>404 Error</h1>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Jumbotron, Button } from 'reactstrap'
+import '../../src/App.css'
 import bgImage from '../assets/cat1.jpg'
 
 class Home extends Component {
@@ -18,12 +19,10 @@ class Home extends Component {
 					// color: 'black',
 				}}
 			>
-				<h1>Welcome to Cat Tinder</h1>
-				<p>It's like Tinder but for cats!</p>
-				{/* <p>
-					<Button variant='primary'>Login</Button>{' '}
-					<Button variant='primary'>Sign Up</Button>
-				</p> */}
+				<div className='text'>
+					<h1>Welcome to Cat Tinder</h1>
+					<p>It's like Tinder but for cats!</p>
+				</div>
 			</Jumbotron>
 		)
 	}
