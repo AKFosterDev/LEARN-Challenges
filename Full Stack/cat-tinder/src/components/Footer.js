@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { RiArrowUpCircleLine } from 'react-icons/ri'
-import '../../src/App.css'
+
 class Footer extends Component {
 	render() {
 		return (

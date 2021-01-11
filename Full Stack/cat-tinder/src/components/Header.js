@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react'
 import { Navbar, Nav, NavLink } from 'reactstrap'
-import '../../src/App.css'
 
 class Header extends Component {
 	render() {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Jumbotron, Button } from 'reactstrap'
-import '../../src/App.css'
 import bgImage from '../assets/cat1.jpg'
 
 class Home extends Component {
@@ -10,13 +9,6 @@ class Home extends Component {
 				className='jumbo-img'
 				style={{
 					backgroundImage: `url(${bgImage})`,
-					// backgroundSize: 'cover',
-					// height: '100vh',
-					// display: 'flex',
-					// flexDirection: 'column',
-					// justifyContent: 'center',
-					// alignItems: 'flex-start',
-					// color: 'black',
 				}}
 			>
 				<div className='text'>
