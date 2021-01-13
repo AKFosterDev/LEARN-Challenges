@@ -10,6 +10,7 @@ class CatNew extends Component {
 				name: '',
 				age: '',
 				enjoys: '',
+				image: '',
 			},
 			submitted: false,
 		}
@@ -57,6 +58,16 @@ class CatNew extends Component {
 							name='enjoys'
 							onChange={this.handleChange}
 							value={this.state.form.enjoys}
+						/>
+					</FormGroup>
+
+					<FormGroup>
+						<Label>Image</Label>
+						<Input
+							type='text'
+							name='image'
+							onChange={this.handleChange}
+							value={this.state.form.image}
 						/>
 					</FormGroup>
 					<Button variant='primary' name='submit' onClick={this.handleSubmit}>

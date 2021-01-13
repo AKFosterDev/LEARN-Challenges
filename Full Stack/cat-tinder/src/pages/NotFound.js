@@ -16,7 +16,7 @@ class NotFound extends Component {
 				}}
 			>
 				<h1>404 Error</h1>
-				<p>Something went wrong!</p>
+				<h4>Something went wrong!</h4>
 				<Link to='/'>
 					<Button variant='primary'>Go Back</Button>
 				</Link>
